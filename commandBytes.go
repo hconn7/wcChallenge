@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/hconn7/wcChallenge/sources/readFile"
+	"github.com/wcChallenge/sources"
 	"log"
 )
 
 func commandBytes() error {
-	data, err := readFile.ReadFile()
+	data, err := ReadFile()
 	if err != nil {
 		log.Fatal(err)
 	}
