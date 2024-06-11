@@ -5,8 +5,7 @@ import (
 	"os"
 )
 
-func ReadFile() ([]byte, error) {
-	fileName := "./test.txt"
+func Readfile(fileName string) ([]byte, error) {
 	data, err := os.ReadFile(fileName)
 	if err != nil {
 		log.Fatal(err)
